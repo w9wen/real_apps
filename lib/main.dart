@@ -53,27 +53,29 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          // mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            // const Text(
-            //   'You have pushed the button this many times:',
-            // ),
-            // Text(
-            //   '$_counter',
-            //   style: Theme.of(context).textTheme.headlineMedium,
-            // ),
-            Container(
-              width: double.infinity,
-              child: const Card(
-                color: Colors.blue,
-                elevation: 5,
-                child: Text("CHART!"),
+        child: SingleChildScrollView(
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              // const Text(
+              //   'You have pushed the button this many times:',
+              // ),
+              // Text(
+              //   '$_counter',
+              //   style: Theme.of(context).textTheme.headlineMedium,
+              // ),
+              Container(
+                width: double.infinity,
+                child: const Card(
+                  color: Colors.blue,
+                  elevation: 5,
+                  child: Text("CHART!"),
+                ),
               ),
-            ),
-            const UserTransactions(),
-          ],
+              const UserTransactions(),
+            ],
+          ),
         ),
       ),
       // floatingActionButton: FloatingActionButton(
